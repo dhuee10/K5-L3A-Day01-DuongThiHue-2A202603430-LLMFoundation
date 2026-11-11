@@ -2,9 +2,9 @@
 
 > Đổi tên file này thành `MSSV_HoTen.md` của bạn, ví dụ `2A20260000_NguyenVanAn.md`, rồi điền từng mục. Xoá các dòng hướng dẫn in nghiêng khi xong.
 
-- **MSSV:**
-- **Họ và tên:**
-- **SEED** (in ở ô đầu notebook):
+- **MSSV:** 2A202603430
+- **Họ và tên:** Duong Thi Hue
+- **SEED** (in ở ô đầu notebook): 3491
 
 ## 1. Bằng chứng
 
@@ -37,3 +37,8 @@
 ## 7. AI log và điều đã học
 
 *Mỗi lần dùng AI: hỏi gì, nhận gì, bạn sửa gì. Sau đó 2–3 câu: điều bạn hiểu ra hôm nay mà trước đó chưa hiểu.*
+
+| Phần | Hỏi AI gì | AI trả lời / viết gì | Đã sửa / kiểm chứng gì |
+| --- | --- | --- | --- |
+| 4 (TODO 4.1–4.4, vùng được dùng AI) | Nhờ AI (Claude Code) viết `call_openai`, `build_classification_prompt`, `parse_label`, `llm_classify_batch` theo docstring và ô kiểm tra giả lập | Code 4 hàm: `chat.completions.create(..., **provider_kwargs(max_tokens))`, prompt kết thúc bằng `Message: """..."""` + `Label:`, `parse_label` xử lý `not spam` trước `spam`, chi phí ước tính theo số từ / 0.75 | Đọc lại từng dòng trước khi gọi API thật; ô kiểm tra 4.2–4.3 và 4.1 + 4.4 (API giả lập) đều ✅ |
+| | | | |
